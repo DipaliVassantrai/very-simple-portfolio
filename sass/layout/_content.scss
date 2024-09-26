@@ -1,0 +1,43 @@
+.content {
+    
+    margin: auto;
+    box-sizing: border-box;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    // backdrop-filter: blur(2rem);
+    padding: $xxxm;
+    border-radius: 4rem;
+    box-shadow: 0 .4rem 5rem 2rem rgba(0, 0, 0, 0.1), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.1);
+   
+}
+
+@media only screen and (max-width: $desktop){
+    .content {
+        width: 854px;
+    }
+    
+}
+
+@media screen and (max-width: $tablet){
+    .content {
+        width: 654px;
+        height: auto;    
+        padding: 55px; 
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 3rem;
+        box-shadow: 0 0 8rem 2rem rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .content {
+        width: 30.3rem;
+        height: auto;
+        margin: 2.2rem;
+        padding: 2.4rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 2rem;
+        box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+  }

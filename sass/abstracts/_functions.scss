@@ -1,0 +1,25 @@
+// map-get(map, key)
+// $font-sizes: ("small": 12px, "normal": 18px, "large": 24px)
+// map-get($font-sizes, "small")
+// Result: 12px
+
+$font-sizes: (
+    "xxxs": .4rem,
+    "xxs": .8rem,
+    "xs": 1.2rem,
+    "s": 1.4rem,
+    "sm": 1.6rem,
+    "m": 1.8rem,
+    "xm": 2.4rem,
+    "xxm": 3.2rem,
+    "xxxm": 4.8rem
+);
+
+$spacing: (
+    "xxxs": .4rem,
+    "xxs": .8rem,
+    "sm": 1.6rem,
+    "xm": 2.4rem,
+    "xxm": 3.2rem,
+    "xxxm": 4.8rem
+);

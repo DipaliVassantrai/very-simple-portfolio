@@ -1,0 +1,63 @@
+.content_B {
+    border-bottom: 0.05rem solid $gray-400;
+    height: auto;
+    @include style-text-box_B;
+
+    &__mHeader {
+        margin: 0;
+        padding-top: $xm ;
+        text-transform: uppercase;
+        font-size: $s;
+        font-weight: 400;
+        color: $gray-400;
+
+    }
+
+    &__para {
+        margin: 0;
+        @include style-text-box_B;
+        font-size: $s;
+        font-weight: 400;
+
+        &_1 {
+            margin: 0;
+        }
+
+        &_2 {
+            margin: 0;
+            padding-bottom: $xm;
+        }
+    }
+
+    .font{
+        color: black;
+        transition: color 0.1s ease, color 0.1s ease;
+        
+    
+
+        &:hover{
+            color: $pink-600;
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .content_B {
+        gap:$xxs;
+        border-bottom: 0.025rem solid $gray-400;
+        
+    &__mHeader {
+        padding-top:16px;
+        font-size: 12px;
+    }
+
+    &__para {
+        font-size:12px;
+        gap:8px;
+        &_2 {
+            padding-bottom: 16px;
+        }
+    }
+    }
+}

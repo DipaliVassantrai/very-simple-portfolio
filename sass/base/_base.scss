@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    cursor: none;
+    
+}
+
+html {
+    // This defines what 1rem is
+    //1 rem = 10px; 10px/16px = 62.5%
+
+    font-size: 62.5%; 
+}
+
+body {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: centre;
+    align-items: center;
+
+
+}
+
+::selection {
+    background-color: $pink-600;
+    color: $white;
+}
+
+
+.noise-container {
+    opacity: .8;
+    position: absolute;
+    z-index: -1000;
+    height: 100%;
+    width: 100%;    
+    background-image: url(https://marvinx.com/assets/images/noise.png);
+    animation: noise-animation 1s steps(10) infinite;
+    filter: contrast(2);
+  
+}
+
+
+
+@media screen and (max-width: $tablet){
+    body {
+        background-color: white;
+        display:flex;
+        justify-content: center;
+      }
+}
+
+@media screen and (max-width: $mobile){
+    body {
+        background-color: white;
+        display:flex;
+        justify-content: center;
+      }
+}

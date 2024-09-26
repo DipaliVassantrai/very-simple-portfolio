@@ -1,0 +1,24 @@
+.content_D {
+    
+    padding-top: 2.4rem;
+    color: $gray-700;
+
+    &__Copyrights {
+        
+        margin: 0;
+        font-size:$s;
+    }
+
+}
+
+@media screen and (max-width: $mobile){
+   .content_D{
+  
+    padding-top: $s;
+
+    &__Copyrights {
+    
+        font-size:$xs;
+    }
+   } 
+}

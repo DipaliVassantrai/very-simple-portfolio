@@ -1,0 +1,26 @@
+.cursor-dot {
+    $size: 10px;
+    width: $size;
+    height: $size;
+    background-color: $primary;
+}
+
+.cursor-dot-outline {
+    $size: 50px;
+    width: $size;
+    height: $size;
+    background-color: rgba($black, .1);
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}

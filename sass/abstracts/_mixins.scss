@@ -1,0 +1,55 @@
+@mixin style-text-box_A {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+@mixin style-text-box_B {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+@mixin style-links-box {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+}
+
+@mixin style-tooltip {
+    display: inline-block;
+    position: absolute;
+    padding: $xxs $sm $xxs $sm;
+    visibility: hidden;
+    background: $pink-600;
+    box-shadow: 0 0 1rem .5rem rgba($pink-500, 0.3);
+    border-radius: 0 3rem 3rem 3rem;
+    color: white;
+    text-align: center;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+@mixin style-tooltip-mobile {
+    display: inline-block;
+    max-width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    color: white;
+    text-align: left;
+
+    position: absolute;
+    padding: $xxs;
+    visibility: hidden;
+    background: $pink-600;
+    box-shadow: 0 0 1rem .5rem rgba($pink-500, 0.3);
+    border-radius: 0 1.5rem 1.5rem 1.5rem;
+
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}

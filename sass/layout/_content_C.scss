@@ -1,0 +1,492 @@
+.content_C {
+    @include style-text-box_B;
+    padding-bottom: $xm;
+    border-bottom: 0.05rem solid $gray-200;
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: $s;
+        gap: $sm;
+    }
+
+    &__links--top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+        gap: $xs;
+    }
+
+    &__links--bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: $xs;
+    }
+
+    &__links--tablet{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: $xs;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        gap: $xs;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: row;
+        gap: $xxs;
+
+        &_1 {
+            text-decoration: none;
+            color: black;
+        }
+
+        &:hover .content_C__link_1 {
+            color: $pink-600;
+        }
+
+        &:hover .content_C__arrow {
+            transform: rotate(90deg);
+        }
+
+        &:hover .content_C__arrow-fig {
+            transform: rotate(45deg);
+        }
+
+        &:hover .arrow {
+            fill: $pink-600;
+        }
+
+        &:hover .content_C__tooltip {
+            &_mail {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_dribbble {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_behance {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_whatsapp {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_linkedin {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_resume {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_framer {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_webflow {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_instagram {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_pinterest {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_medium {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_github {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &_twitter {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__arrow:hover .content_C__link {
+        color: $pink-600;
+    }
+
+    &__tooltip {
+        //top row
+        &_mail {
+            @include style-tooltip;
+            left: 38.4%;
+            top: 64.8%;
+        }
+
+        &_dribbble {
+            @include style-tooltip;
+            left: 44.2%;
+            top: 64.8%;
+        }
+
+        &_behance {
+            @include style-tooltip; 
+            left: 49.6%;
+            top: 64.8%;
+        }
+
+        &_whatsapp {
+            @include style-tooltip;
+            left: 53.6%;
+            top: 64.8%;
+        }
+
+        &_linkedin {
+            @include style-tooltip;
+            left: 62.4%;
+            top: 64.8%;
+        }
+
+        &_resume {
+            @include style-tooltip;
+            left: 63.8%;
+            top: 64.8%;
+        }
+
+        //bottom row
+        &_framer {
+            @include style-tooltip;
+            left: 44.8%;
+            top: 68.6%;
+        }
+
+        &_webflow {
+            @include style-tooltip;
+            left: 46%;
+            top: 68.6%;
+        }
+
+        &_instagram {
+            @include style-tooltip;
+            left: 52.6%;
+            top: 68.6%;
+        }
+
+        &_pinterest {
+            @include style-tooltip;
+            left: 58.8%;
+            top: 68.6%;
+        }
+
+        &_medium {
+            @include style-tooltip;
+            left: 65.8%;
+            top: 68.6%;
+        }
+
+        &_github {
+            @include style-tooltip;
+            left: 69.6%;
+            top: 68.6%;
+        }
+
+        &_twitter {
+            @include style-tooltip;
+            left: 67%;
+            top: 68.6%;
+            border-radius: 3rem 0rem 3rem 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet){
+    .content_C{
+        &__links {
+            display: flex;
+            justify-content: flex-start;
+            gap: $xs;
+            font-size: $s;
+        }
+        &__links--bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: $xs;
+        }
+        &__links--tablet{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: $xs;
+        }
+        &__tooltip {
+            //top row
+            &_mail {
+                @include style-tooltip;
+                left: 39.6%;
+                top: 66.2%;
+            }
+    
+            &_dribbble {
+                @include style-tooltip;
+                left: 51.6%;
+                top: 66.2%;
+            }
+    
+            &_behance {
+                @include style-tooltip; 
+                left: 62.2%;
+                top: 66.2%;
+            }
+    
+            &_whatsapp {
+                @include style-tooltip;
+                left: 70%;
+                top: 66.2%;
+            }
+    
+            &_linkedin {
+                @include style-tooltip;
+                left: 55.8%;
+                top: 66.2%;
+                border-radius: 3rem 0rem 3rem 3rem;
+                
+            }
+    
+            &_resume {
+                @include style-tooltip;
+                left: 74.8%;
+                top: 66.2%;
+                border-radius: 3rem 0rem 3rem 3rem;
+            }
+    
+            //bottom row
+            &_framer {
+                @include style-tooltip;
+                left: 52.8%;
+                top: 69.6%;
+            }
+    
+            &_webflow {
+                @include style-tooltip;
+                left: 55%;
+                top: 69.6%;
+            }
+    
+            &_instagram {
+                @include style-tooltip;
+                left: 68.6%;
+                top: 69.6%;
+            }
+    
+            &_pinterest {
+                @include style-tooltip;
+                left: 64.6%;
+                top: 69.6%;
+                border-radius: 3rem 0rem 3rem 3rem;
+            }
+    
+            &_medium {
+                @include style-tooltip;
+                left: 73.2%;
+                top: 69.6%;
+                border-radius: 3rem 0rem 3rem 3rem;
+            }
+    
+            &_github {
+                @include style-tooltip;
+                left: 34%;
+                top: 72.6%;
+            }
+    
+            &_twitter {
+                @include style-tooltip;
+                left: 44.6%;
+                top: 72.6%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .content_C {
+        @include style-text-box_B;
+        padding-bottom: $s;
+        border-bottom: 0.025rem solid $gray-200;
+
+        &__links {
+            display: flex;
+            justify-content: flex-start;
+            gap: $xs;
+            font-size: $xs;
+        }
+
+        &__links--top {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            overflow: visible;
+            gap: $xs;
+        }
+
+        &__links--bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            overflow: visible;
+            gap: $xs;
+        }
+
+        &__links--tablet {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            overflow: visible;
+            gap: $xs;
+        }
+
+        #links {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: $xxs;
+        }
+
+        &__tooltip {
+
+            //top 
+            &_mail {
+                @include style-tooltip-mobile;
+                width: 13rem;
+                left: 47.2%;
+                top: 67.2%;
+            }
+
+            &_dribbble {
+                @include style-tooltip-mobile;
+                width: 12rem;
+                left: 62.8%;
+                top: 67.2%;
+            }
+
+            &_behance {
+                @include style-tooltip-mobile;
+                width: 11.4rem;
+                left: 55.2%;
+                top: 67.2%;
+                border-radius: 1.5rem 0rem 1.5rem 1.5rem;
+            }
+
+            &_whatsapp {
+                @include style-tooltip-mobile;
+                width: 13.4rem;
+                left: 55%;
+                top: 70.2%;
+            }
+
+            &_linkedin {
+                @include style-tooltip-mobile;
+                width: 11.8rem;
+                left: 46.8%;
+                top: 70.2%;
+                text-align: right;
+                border-radius: 1.5rem 0rem 1.5rem 1.5rem;
+            }
+
+            &_resume {
+                @include style-tooltip-mobile;
+                width: 6.5rem;
+                left: 67%;
+                top: 70.2%;
+                text-align: right;
+                border-radius: 1.5rem 0rem 1.5rem 1.5rem;
+            }
+
+            //bottom
+            &_framer {
+                @include style-tooltip-mobile;
+                width: 12.8rem;
+                left: 38.2%;
+                top: 73.2%;
+                text-align: right;
+                border-radius: 1.5rem 0rem 1.5rem 1.5rem;
+            }
+
+            &_webflow {
+                @include style-tooltip-mobile;
+                width: 6.5rem;
+                left: 60.8%;
+                top: 73.2%;
+                text-align: right;
+                border-radius: 1.5rem 0rem 1.5rem 1.5rem;
+            }
+
+            &_instagram {
+                @include style-tooltip-mobile;
+                width: 6.5rem;
+                left: 48.4%;
+                top: 76.2%;
+            }
+
+            &_pinterest {
+                @include style-tooltip-mobile;
+                width: 6.5rem;
+                left: 65.8%;
+                top: 76.2%;
+            }
+
+            &_medium {
+                @include style-tooltip-mobile;
+                width: 8.4rem;
+                left: 67.2%;
+                top: 76.2%;
+                text-align: right;
+                border-radius: 1.5rem 0rem 1.5rem 1.5rem;
+            }
+
+            &_github {
+                @include style-tooltip-mobile;
+                width: 6.5rem;
+                left: 44.4%;
+                top: 79.2%;
+            }
+
+            &_twitter {
+                @include style-tooltip-mobile;
+                width: 6.5rem;
+                left: 59.8%;
+                top: 79.2%;
+            }
+        }
+    }
+}
+
+
+

@@ -1,66 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-  cursor: none; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: centre;
-  align-items: center;
-  margin: 0;
-  overflow: hidden; }
-
-::selection {
-  background-color: #db2777;
-  color: #fff; }
-
-.noise-container {
-  opacity: .8;
-  position: absolute;
-  z-index: -1000;
-  top: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url(https://marvinx.com/assets/images/noise.png);
-  animation: noise-animation 1s steps(10) infinite;
-  filter: contrast(2); }
-
-@media screen and (max-width: 1439px) {
-  body {
-    background-color: white;
-    display: flex;
-    justify-content: center; } }
-
-@media screen and (max-width: 743px) {
-  body {
-    background-color: white;
-    position: relative;
-    overflow: visible; }
-  .noise-container {
-    position: absolute;
-    height: 100%; } }
-
-body {
-  font-family: "Montagu Slab";
-  font-style: normal;
-  font-size: 62.5%; }
-
-#font {
-  font-size: 1.4rem; }
-
 #body {
   margin: 11.5rem;
   display: flex;
@@ -1093,3 +1030,66 @@ body {
 @keyframes noise-animation {
   100% {
     background-position: -100% 100%; } }
+
+body {
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-size: 62.5%; }
+
+#font {
+  font-size: 1.4rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  cursor: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: centre;
+  align-items: center;
+  margin: 0;
+  overflow: hidden; }
+
+::selection {
+  background-color: #db2777;
+  color: #fff; }
+
+.noise-container {
+  opacity: .8;
+  position: absolute;
+  z-index: -1000;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://marvinx.com/assets/images/noise.png);
+  animation: noise-animation 1s steps(10) infinite;
+  filter: contrast(2); }
+
+@media screen and (max-width: 1439px) {
+  body {
+    background-color: white;
+    display: flex;
+    justify-content: center; } }
+
+@media screen and (max-width: 743px) {
+  body {
+    background-color: white;
+    position: relative;
+    overflow: visible; }
+  .noise-container {
+    position: absolute;
+    height: 100%; } }

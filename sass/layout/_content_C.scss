@@ -337,6 +337,7 @@
         @include style-text-box_B;
         padding-bottom: $s;
         border-bottom: 0.025rem solid $gray-200;
+        
 
         &__links {
             display: flex;
@@ -380,42 +381,43 @@
         }
 
         &__tooltip {
-
+           
             //top 
             &_mail {
                 @include style-tooltip-mobile;
                 width: 13rem;
-                left: 47.2%;
-                top: 67.2%;
+                left: 46.8%;
+                top: 68.8%;
+                
             }
 
             &_dribbble {
                 @include style-tooltip-mobile;
                 width: 12rem;
-                left: 62.8%;
-                top: 67.2%;
+                left: 66.5%;
+                top: 68.8%;
             }
 
             &_behance {
                 @include style-tooltip-mobile;
                 width: 11.4rem;
-                left: 55.2%;
-                top: 67.2%;
+                left: 57%;
+                top: 68.8%;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
 
             &_whatsapp {
                 @include style-tooltip-mobile;
-                width: 13.4rem;
-                left: 55%;
-                top: 70.2%;
+                width: 13.5rem;
+                left: 56.8%;
+                top: 72.2%;
             }
 
             &_linkedin {
                 @include style-tooltip-mobile;
                 width: 11.8rem;
-                left: 46.8%;
-                top: 70.2%;
+                left: 45.2%;
+                top: 72.2%;
                 text-align: right;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
@@ -423,8 +425,8 @@
             &_resume {
                 @include style-tooltip-mobile;
                 width: 6.5rem;
-                left: 67%;
-                top: 70.2%;
+                left: 73%;
+                top: 72.2%;
                 text-align: right;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
@@ -433,8 +435,8 @@
             &_framer {
                 @include style-tooltip-mobile;
                 width: 12.8rem;
-                left: 38.2%;
-                top: 73.2%;
+                left: 34.2%;
+                top: 75.4%;
                 text-align: right;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
@@ -442,8 +444,8 @@
             &_webflow {
                 @include style-tooltip-mobile;
                 width: 6.5rem;
-                left: 60.8%;
-                top: 73.2%;
+                left: 64.8%;
+                top: 75.4%;
                 text-align: right;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
@@ -452,21 +454,21 @@
                 @include style-tooltip-mobile;
                 width: 6.5rem;
                 left: 48.4%;
-                top: 76.2%;
+                top: 78.8%;
             }
 
             &_pinterest {
                 @include style-tooltip-mobile;
                 width: 6.5rem;
-                left: 65.8%;
-                top: 76.2%;
+                left: 71.4%;
+                top: 78.8%;
             }
 
             &_medium {
                 @include style-tooltip-mobile;
                 width: 8.4rem;
-                left: 67.2%;
-                top: 76.2%;
+                left: 72.2%;
+                top: 78.8%;
                 text-align: right;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
@@ -474,15 +476,15 @@
             &_github {
                 @include style-tooltip-mobile;
                 width: 6.5rem;
-                left: 44.4%;
-                top: 79.2%;
+                left: 42.4%;
+                top: 82.2%;
             }
 
             &_twitter {
                 @include style-tooltip-mobile;
                 width: 6.5rem;
-                left: 59.8%;
-                top: 79.2%;
+                left: 62.2%;
+                top: 82.2%;
             }
         }
     }

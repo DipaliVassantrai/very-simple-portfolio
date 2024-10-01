@@ -18,7 +18,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: centre;
-  align-items: center; }
+  align-items: center;
+  margin: 0;
+  overflow: hidden; }
 
 ::selection {
   background-color: #db2777;
@@ -28,6 +30,8 @@ body {
   opacity: .8;
   position: absolute;
   z-index: -1000;
+  top: 0;
+  margin: 0;
   height: 100%;
   width: 100%;
   background-image: url(https://marvinx.com/assets/images/noise.png);
@@ -44,7 +48,9 @@ body {
   body {
     background-color: white;
     display: flex;
-    justify-content: center; } }
+    justify-content: center;
+    position: relative;
+    overflow: visible; } }
 
 body {
   font-family: "Montagu Slab";

@@ -1,43 +1,117 @@
-.content {
-    
-    margin: auto;
-    box-sizing: border-box;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.3);
-    // backdrop-filter: blur(2rem);
-    padding: $xxxm;
+#body{
+    margin:11.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 85.4rem;
+    height: 68.1rem;
+    position: relative;
     border-radius: 4rem;
     box-shadow: 0 .4rem 5rem 2rem rgba(0, 0, 0, 0.1), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.1);
+}
+.content {
+    position:absolute;
+    z-index: 1;
+    margin: auto;
+    height: auto;
+    width: 85.4rem;
+    box-sizing: border-box;
+    background-color:rgba(255, 255, 255, 0.1);
+    padding: $xxxm;
+    border-radius: 4rem;
+}
+.content-back .rectangle{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 85.4rem;
+    height: 68.1rem;
+}
+.content-back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
    
 }
-
-@media only screen and (max-width: $desktop){
-    .content {
-        width: 854px;
-    }
+.rectangle {
+    backdrop-filter: blur(.5rem) brightness(100%);
+    border-radius: 4rem;
+    background-color: rgba(0, 0, 0, 0.01);
     
 }
 
 @media screen and (max-width: $tablet){
-    .content {
-        width: 654px;
-        height: auto;    
-        padding: 55px; 
-        background-color: rgba(255, 255, 255, 0.3);
+    #body {
+        margin:0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 65.4rem;
+        height: 76.1rem;
         border-radius: 3rem;
-        box-shadow: 0 0 8rem 2rem rgba(0, 0, 0, 0.1);
+        box-shadow:  0 .3rem 4rem 1rem rgba(0, 0, 0, 0.1), 0 .5rem 2rem  rgba(0, 0, 0, 0.1);
+    }
+    .content {
+        width: auto;
+        height: auto;    
+        background-color: rgba(255, 255, 255, 0.1);
+        
+        
+    }
+    .content-back .rectangle{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 65.4rem;
+        height: 76.1rem;
+        border-radius: 3rem; 
+    }
+    .content-back{
+        z-index: -1;
+       
+    }
+    .rectangle {
+        backdrop-filter: blur(.4rem) brightness(100%);
+        
     }
 }
 
 @media screen and (max-width: $mobile) {
-    .content {
-        width: 30.3rem;
-        height: auto;
+    #body{
         margin: 2.2rem;
-        padding: 2.4rem;
-        background-color: rgba(255, 255, 255, 0.3);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 30.3rem;
+        height: 81.2rem;
         border-radius: 2rem;
         box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.1);
-    }
 
+    }
+    .content {
+        width: auto;
+        height: auto;
+        padding: 2.4rem;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .content-back .rectangle{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 30.3rem;
+        height: 81.2rem;
+        border-radius: 2rem; 
+    }
+    .rectangle {
+        backdrop-filter: blur(.5rem) brightness(100%);
+        
+    }
   }

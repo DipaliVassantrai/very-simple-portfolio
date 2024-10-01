@@ -141,83 +141,85 @@
 
     &__tooltip {
         //top row
+        $top-row: 70.2%;
         &_mail {
             @include style-tooltip;
-            left: 38.4%;
-            top: 64.8%;
+            left: 27.8%;
+            top: $top-row;
         }
 
         &_dribbble {
             @include style-tooltip;
-            left: 44.2%;
-            top: 64.8%;
+            left: 38.8%;
+            top: $top-row;
         }
 
         &_behance {
             @include style-tooltip; 
             left: 49.6%;
-            top: 64.8%;
+            top: $top-row;
         }
 
         &_whatsapp {
             @include style-tooltip;
-            left: 53.6%;
-            top: 64.8%;
+            left: 56.8%;
+            top: $top-row;
         }
 
         &_linkedin {
             @include style-tooltip;
-            left: 62.4%;
-            top: 64.8%;
+            left: 74%;
+            top: $top-row;
         }
 
         &_resume {
             @include style-tooltip;
-            left: 63.8%;
-            top: 64.8%;
+            left: 76.8%;
+            top: $top-row;
         }
 
         //bottom row
+        $bottom-row:75.2%;
         &_framer {
             @include style-tooltip;
-            left: 44.8%;
-            top: 68.6%;
+            left: 40.2%;
+            top: $bottom-row;
         }
 
         &_webflow {
             @include style-tooltip;
-            left: 46%;
-            top: 68.6%;
+            left: 42%;
+            top:  $bottom-row;
         }
 
         &_instagram {
             @include style-tooltip;
-            left: 52.6%;
-            top: 68.6%;
+            left: 55%;
+            top:  $bottom-row;
         }
 
         &_pinterest {
             @include style-tooltip;
-            left: 58.8%;
-            top: 68.6%;
+            left: 67.2%;
+            top:  $bottom-row
         }
 
         &_medium {
             @include style-tooltip;
-            left: 65.8%;
-            top: 68.6%;
+            left: 80.4%;
+            top:  $bottom-row;
         }
 
         &_github {
             @include style-tooltip;
-            left: 69.6%;
-            top: 68.6%;
+            left: 86.6%;
+            top:  $bottom-row;
         }
 
         &_twitter {
             @include style-tooltip;
-            left: 67%;
-            top: 68.6%;
+            left: 82.8%;
+            top: $bottom-row;
             border-radius: 3rem 0rem 3rem 3rem;
         }
     }
@@ -245,88 +247,91 @@
         }
         &__tooltip {
             //top row
+            $top-row: 69.8%;
             &_mail {
                 @include style-tooltip;
-                left: 39.6%;
-                top: 66.2%;
+                left: 37.2%;
+                top:  $top-row;
             }
     
             &_dribbble {
                 @include style-tooltip;
                 left: 51.6%;
-                top: 66.2%;
+                top:  $top-row;
             }
     
             &_behance {
                 @include style-tooltip; 
-                left: 62.2%;
-                top: 66.2%;
+                left: 65.4%;
+                top:  $top-row;
             }
     
             &_whatsapp {
                 @include style-tooltip;
-                left: 70%;
-                top: 66.2%;
+                left: 75%;
+                top:  $top-row;
             }
     
             &_linkedin {
                 @include style-tooltip;
-                left: 55.8%;
-                top: 66.2%;
+                left: 56.8%;
+                top:  $top-row;
                 border-radius: 3rem 0rem 3rem 3rem;
                 
             }
     
             &_resume {
                 @include style-tooltip;
-                left: 74.8%;
-                top: 66.2%;
+                left: 80.8%;
+                top:  $top-row;
                 border-radius: 3rem 0rem 3rem 3rem;
             }
     
             //bottom row
+            $bottom-row-1: 73.4%;
+            $bottom-row-2:77.4%;
             &_framer {
                 @include style-tooltip;
-                left: 52.8%;
-                top: 69.6%;
+                left: 53.4%;
+                top: $bottom-row-1;
             }
     
             &_webflow {
                 @include style-tooltip;
-                left: 55%;
-                top: 69.6%;
+                left: 55.8%;
+                top: $bottom-row-1;
             }
     
             &_instagram {
                 @include style-tooltip;
-                left: 68.6%;
-                top: 69.6%;
+                left: 73.2%;
+                top: $bottom-row-1;
             }
     
             &_pinterest {
                 @include style-tooltip;
-                left: 64.6%;
-                top: 69.6%;
+                left: 68.6%;
+                top: $bottom-row-1;
                 border-radius: 3rem 0rem 3rem 3rem;
             }
     
             &_medium {
                 @include style-tooltip;
-                left: 73.2%;
-                top: 69.6%;
+                left: 78.8%;
+                top: $bottom-row-1;
                 border-radius: 3rem 0rem 3rem 3rem;
             }
     
             &_github {
                 @include style-tooltip;
-                left: 34%;
-                top: 72.6%;
+                left: 30%;
+                top: $bottom-row-2;
             }
     
             &_twitter {
                 @include style-tooltip;
-                left: 44.6%;
-                top: 72.6%;
+                left: 43.2%;
+                top: $bottom-row-2;
             }
         }
     }
@@ -383,41 +388,43 @@
         &__tooltip {
            
             //top 
+            $row-1: 69.8%;
+            $row-2:73.2%;
             &_mail {
                 @include style-tooltip-mobile;
                 width: 13rem;
-                left: 46.8%;
-                top: 68.8%;
+                left: 44.8%;
+                top: $row-1;
                 
             }
 
             &_dribbble {
                 @include style-tooltip-mobile;
                 width: 12rem;
-                left: 66.5%;
-                top: 68.8%;
+                left: 70.4%;
+                top: $row-1;
             }
 
             &_behance {
                 @include style-tooltip-mobile;
                 width: 11.4rem;
-                left: 57%;
-                top: 68.8%;
+                left: 58.8%;
+                top: $row-1;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
 
             &_whatsapp {
                 @include style-tooltip-mobile;
                 width: 13.5rem;
-                left: 56.8%;
-                top: 72.2%;
+                left: 58.2%;
+                top: $row-2;
             }
 
             &_linkedin {
                 @include style-tooltip-mobile;
                 width: 11.8rem;
                 left: 45.2%;
-                top: 72.2%;
+                top: $row-2;
                 text-align: right;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
@@ -425,18 +432,21 @@
             &_resume {
                 @include style-tooltip-mobile;
                 width: 6.5rem;
-                left: 73%;
-                top: 72.2%;
+                left: 78.2%;
+                top: $row-2;
                 text-align: right;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
 
             //bottom
+            $row-3: 76.7%;
+            $row-4: 80.2%;
+            $row-5: 83.4%;
             &_framer {
                 @include style-tooltip-mobile;
                 width: 12.8rem;
-                left: 34.2%;
-                top: 75.4%;
+                left: 30.8%;
+                top: $row-3;
                 text-align: right;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
@@ -444,8 +454,8 @@
             &_webflow {
                 @include style-tooltip-mobile;
                 width: 6.5rem;
-                left: 64.8%;
-                top: 75.4%;
+                left: 67.8%;
+                top: $row-3;
                 text-align: right;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
@@ -454,21 +464,21 @@
                 @include style-tooltip-mobile;
                 width: 6.5rem;
                 left: 48.4%;
-                top: 78.8%;
+                top: $row-4;
             }
 
             &_pinterest {
                 @include style-tooltip-mobile;
                 width: 6.5rem;
-                left: 71.4%;
-                top: 78.8%;
+                left: 76.4%;
+                top: $row-4;
             }
 
             &_medium {
                 @include style-tooltip-mobile;
                 width: 8.4rem;
-                left: 72.2%;
-                top: 78.8%;
+                left: 78.2%;
+                top:$row-4;
                 text-align: right;
                 border-radius: 1.5rem 0rem 1.5rem 1.5rem;
             }
@@ -476,17 +486,19 @@
             &_github {
                 @include style-tooltip-mobile;
                 width: 6.5rem;
-                left: 42.4%;
-                top: 82.2%;
+                left: 41%;
+                top:  $row-5;
             }
 
             &_twitter {
                 @include style-tooltip-mobile;
                 width: 6.5rem;
-                left: 62.2%;
-                top: 82.2%;
+                left:66.2%;
+                top:  $row-5;
             }
         }
+
+       
     }
 }
 
